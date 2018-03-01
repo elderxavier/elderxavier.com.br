@@ -1,0 +1,6 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      assets/css/scss/outline.css: {}
+      https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500: { type: external, minified: false }

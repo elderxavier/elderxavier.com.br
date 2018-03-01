@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt-br"> <!--<![endif]--> 
+    <head> 
+        <!-- Meta Tags -->
+        <meta http-equiv="Content-Language" content="pt-br">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Elder Xavier</title>   
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="include/img/faviico.jpg">
+        <meta name="description" content="PROGRAMADOR / WEB DEVELOPER - Desenvolviento de aplicações e sistemas para desktops, web e mobille" /> 
+        <!-- Mobile Specifics -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>   
+        <!-- Mobile Internet Explorer ClearType Technology -->
+        <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+        <!-- Bootstrap -->
+        <link href="include/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Main Style -->
+        <link href="include/css/main.css" rel="stylesheet">
+        <!-- Supersized -->
+        <link href="include/css/supersized.css" rel="stylesheet">
+        <link href="include/css/supersized.shutter.css" rel="stylesheet">
+        <!-- FancyBox -->
+        <link href="include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+        <!-- Font Icons -->
+        <link href="include/css/fonts.css" rel="stylesheet">
+        <!-- Shortcodes -->
+        <link href="include/css/shortcodes.css" rel="stylesheet">
+        <!-- Responsive -->
+        <link href="include/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="include/css/responsive.css" rel="stylesheet">
+        <!-- Supersized -->
+        <link href="include/css/supersized.css" rel="stylesheet">
+        <link href="include/css/supersized.shutter.css" rel="stylesheet">
+        <!-- Google Font -->
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="#">
+        <link rel="apple-touch-icon" href="#">
+        <link rel="apple-touch-icon" sizes="114x114" href="#">
+        <link rel="apple-touch-icon" sizes="72x72" href="#">
+        <link rel="apple-touch-icon" sizes="144x144" href="#">
+        <!-- Modernizr -->
+        <script src="include/js/modernizr.js"></script>
+        <!-- Analytics -->
+        <script type="text/javascript">
+        </script>
+        <!-- End Analytics -->
+    </head>
+    <body>
+        <!-- This section is for Splash Screen -->
+        <div class="ole">
+            <section id="jSplash">
+                <div id="circle"></div>
+            </section>
+        </div>
+        <!-- End of Splash Screen -->
+        <!-- Homepage Slider -->
+        <div id="home-slider">	
+            <div class="overlay"></div>
+            <div class="slider-text">
+                <div id="slidecaption"></div>
+            </div>   
+            <div class="control-nav">
+                <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+                <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+                <ul id="slide-list"></ul>
+                <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+            </div>
+        </div>
+        <!-- End Homepage Slider -->
+        <!-- Header -->
+        <header>
+            <div class="sticky-nav">
+                <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+                <div id="logo">
+                    <a id="goUp" href="#home-slider" title="Logo Elder Xavier">
+                        <img id="img-logo" src="include/img/logo-ex.jpg" alt="Logo Elder Sergio Xavier">
+                    </a>
+                </div>
+                <nav id="menu">
+                    <ul id="menu-nav">
+                        <li class="current"><a href="#home-slider">Home</a></li>
+                        <li><a href="#work">Utimos Projetos</a></li>
+                        <li><a href="#about">Especialidades</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="blog/blog.html" class="external" target="_blank">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Our Work Section -->
+        <div id="work" class="page">
+            <div class="container">
+                <!-- Title Page -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="title-page">
+                            <h2 class="title">Projetos</h2>
+                            <h3 class="title-description">Veja os útimos projetos realizados. <br>
+                                Alguns projetos também podem ser encontrado no <a href="https://github.com/elderxavier?tab=repositories" target="_blank" >meu repositório</a>.</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Title Page -->
+                <!-- Portfolio Projects -->
+                <div class="row">
+                    <div class="span3">
+                        <!-- Filter -->
+                        <nav id="options" class="work-nav">
+                            <ul id="filters" class="option-set" data-option-key="filter">
+                                <li class="type-work">Projetos</li>
+                                <li><a href="#filter" data-option-value="*" class="selected">Todos</a></li>
+                                <li><a href="#filter" data-option-value=".eccomerce">E-ccomerce</a></li>
+                                <li><a href="#filter" data-option-value=".web">Desenvolvimento Web</a></li>
+                                <li><a href="#filter" data-option-value=".mobile">Apps</a></li>
+                                <li><a href="#filter" data-option-value=".desktop">Desktop</a></li>                           
+                            </ul>
+                        </nav>
+                        <!-- End Filter -->
+                    </div>
+                    <div class="span9">
+                        <div class="row">
+                            <section id="projects">
+                                <ul id="thumbs">
+                                    <li class="item-thumbs span3 web">  
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="Portal Prefeitura de Taboao da Serra" href="include/img/work/full/portal-taboao.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span> 
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/portal-taboao_thumbs.jpg" alt="Desenvolvimento do Portal para Prefeitura de Taboao da Serra - São Paulo">
+                                    </li>
+                                    <li class="item-thumbs span3 mobile">  
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Mundo Sindical App" href="include/img/work/full/app-mundo-sindical.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span> 
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/app-mundo-sindical_thumbs.jpg" alt="App para leitores da revista Mundo Sindical, disponível na Google Play (play.google.com/store/apps/details?id=br.com.easysystem.mundosindical)">
+                                    </li>
+                                    <li class="item-thumbs span3 desktop">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="desktop" title="Modulo de Controle de Patrimonio" href="include/img/work/full/tontos.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span> 
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/tontos_thumbs.jpg" alt="Modulo de Controle de Patrimonio para ERP desenvolvido em Java">
+                                    </li>
+                                    
+                                    <li class="item-thumbs span3 mobile">  
+                                        <a class="hover-wrap fancybox" data-fancybox-group="mobile" title="Easy Coop App" href="include/img/work/full/app-easycoop.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span> 
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/app-easycoop_thumbs.jpg" alt="App para leitores da revista Easy Coop, disponível na Google Play (play.google.com/store/apps/details?id=br.com.easysystem.easycoop470201)">
+                                    </li>
+                                    <li class="item-thumbs span3 web">  
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="La Vie Est Belle" href="include/img/work/full/la-vie-est-belle.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span> 
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/la-vie-est-belle_thumbs.jpg" alt="Lançamento da campanha da Lancome para o per fume La Vie Est Belle (lancome.com.br/la-vie-est-belle)">
+                                    </li>
+                                    <li class="item-thumbs span3 eccomerce">  
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Garnier Fructis" href="include/img/work/full/garnier-fructis.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span> 
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/garnier-fructis_thumbs.jpg" alt="Lançamento do Garnier Fructis - Liso Absoluto (garnier.com.br/cabelos/beauty/fructis/liso-absoluto)">
+                                    </li>
+                                    
+                                    <li class="item-thumbs span3 web">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="Sistema de Controle Financeiro" href="include/img/work/full/controlefinanceiro.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/controlefinanceiro_thumbs.jpg" alt="Sistema pratiico para controle de finanças contendo indicador gráfico de fluxo de caixa, manual de instruções e upload de arquivos">
+                                    </li>
+                                    <li class="item-thumbs span3 eccomerce">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Modulo de Busca Magento " href="include/img/work/full/buscatropikanas.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/buscatropikanas_thumbs.jpg" alt="Modulo de busca e sidebar left filter para categoriias, preços e atributos do produto">
+                                    </li>
+                                    <li class="item-thumbs span3 eccomerce">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Checkout Magento " href="include/img/work/full/checkouttropikanas.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/checkouttropikanas_thumbs.jpg" alt="Checkout Onpage com layout adaptado.">
+                                    </li>
+                                    <li class="item-thumbs span3 eccomerce">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Modulo de Integração Mercado Livre" href="include/img/work/full/mltocalivros.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/mltocalivros_thumbs.jpg" alt="Modulodo para integrar a API do Mercado Livre ao sistema de E-ccomerce proprietário conforme lógica de negócios do cliente.">
+                                    </li>
+                                    <li class="item-thumbs span3 web">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="SII9" href="include/img/work/full/sii9.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/sii9_thumbs.jpg" alt="O site foi personalizado conforme solicitado pelo cliente. Entre as alterações estão a integração do sistema de gestão de conteúdo e inclusão de  novos blocos as page views.">
+                                    </li>  
+                                    <li class="item-thumbs span3 eccomerce">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Toca Livros - Sistema Administrativo" href="include/img/work/full/admintocalivros.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/admintocalivros_thumbs.jpg" alt="Desenvolvido um sistema administrativo proprietário conforme lógica de negocio adotada pela empresa e solicitações do cliente. Neste projeto desenvolvolvido com um sistema escalavel com uma interface JQuery UI de itens drag drop para Gestãoo de Produtos, Gestão de Categorias e Gestão de Promoções.">
+                                    </li>
+                                    <li class="item-thumbs span3 web eccomerce">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="NF-e Manager" href="include/img/work/full/nfemanager.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/nfemanager_thumbs.jpg" alt="A View do sistema foi desenvolvida em Drupla com modulo ERP e API Restful para integração. O sistema foi desenvolvido com duas engines para emissão de Notas Fiscais Eletronica, uma em Java J2EE e outra em PHP com a lib do PHPNF-e, ambas integradas com os servidores da Secretaria da Fazenda e outras API's para gerar código dos estados e municípios, validar NCM's e EAN's.">
+                                    </li>                                    
+                                    <li class="item-thumbs span3 web">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="V8 Motors" href="include/img/work/full/v8motors.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/v8motors_thumbs.jpg" alt="Site desenvolvido com visual clean e conforme boas praticas de desenvolvimento. Composto com um compacto sistema para solicitar peça para autómoveis pode ser conferido em v8motors.com.br ou portifolio-elderxavier.rhcloud.com/v8.">
+                                    </li>                                    
+                                    <li class="item-thumbs span3 web">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="SII9 - Gestor de Conteúdo" href="include/img/work/full/adminsii9.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/adminsii9_thumbs.jpg" alt="Neste projeto foram desenvolvolvidas novas funcionalidades para gestão de conteúdo conforme regra de negócios do cliente.">
+                                    </li>                                    
+                                    <li class="item-thumbs span3 web">                                        
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="E-Estoque" href="include/img/work/full/controledeestoque.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>                                        
+                                        <img src="include/img/work/thumbs/controledeestoque_thumbs.jpg" alt="Sistema compacto para controle de estoque. Desenvolvido com tecnologia J2EE, EJB, JPA e servlets, com uma interface JQuery UI e Bootstrap e uma base de dados em Mysql 5.4.">
+                                    </li>                                    
+                                    <!-- Tropikanas - Compartilhar em redes sociais  -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Tropikanas - Modulo para compartilhar com redes sociais" href="include/img/work/full/torpikanas_socialnetworks.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/torpikanas_socialnetworks_thumbs.jpg" alt="Desenvolvimento de modulo para compartilhar produtos com amigos e redes sociais. O projeto pode ser conferido em  http://www.tropikanas.com/conjunto-lingerie-plus-size-preto-rendado.html">
+                                    </li>
+                                    <!-- Lady Large MP -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Archeive Leap - Modulo de integração com Magento" href="include/img/work/full/archieveleap-integratormodule.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/archieveleap-integratormodule_thumbs.jpg" alt="Desenvolvimento de modulo para integração personalizada de produtos de lojas virtuais Magento com plataforme de Integração da Archieve Leap">
+                                    </li>
+                                    <!-- Lady Large MP -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Lady Large - Mercado Pago Notifications" href="include/img/work/full/ladylarge_mpnotifications.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/ladylarge_mpnotifications_thumbs.jpg" alt="Desenvolvimento do checkout integrado a API Mercado Pago. Foi criado um modulo para atualizar o status dos pedidos conforme as notificações do Mercado Pago.  Pode ser conferido em ladylarge.com.br">
+                                    </li>
+                                    <!-- E-lustre checout -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="E-lustre checkout" href="include/img/work/full/elustre-checkout.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/elustre-checkout_thumbs.jpg" alt="Desenvolvimento da página de checkout integrado com a API PagSeguro. O projeto foi realizado conforme layout apresentado pelo cliente com a inclusão de detecção de cliente e login via Ajax, pagamento e formas d pagamento transparente e de log e analize de erros. Pode ser conferido em e-lustre.com.br">
+                                    </li>
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Magmi Admin" href="include/img/work/full/magmi_admin.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/magmi_admin_thumbs.jpg" alt="Modulo Magento de correção de seguraça e acesso restrito para admiministradores ">
+                                    </li>
+                                    <!-- End Item Project -->
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Venda Personalizada" href="include/img/work/full/venda_associada_produto.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/venda_associada_produto_thumbs.jpg" alt="Modulo Magento para venda associada personalizada de produto. Neste modulo foi é opcional o acressim de produtos complementares ao produto escolhido.">
+                                    </li>
+                                    <!-- End Item Project -->
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 desktop">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="desktop" title="Calculadora" href="include/img/work/full/calculadora.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/calculadora_thumbs.jpg" alt="Modulo de calculadora para ERP desenvolvido em Java, ultilizando engine Javascript.">
+                                    </li>
+                                    <!-- End Item Project -->
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Email Marketing" href="include/img/work/full/news_vtex.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/news_vtex_thumbs.jpg" alt="Aplicação em PHP para disparo programado de e-mail marketing para plataforma Vtex.">
+                                    </li>
+                                    <!-- End Item Project -->
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Hot Pages - Vtex" href="include/img/work/full/vtex_hotpage.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/vtex_hotpage_thumbs.jpg" alt="Criação de templates e hot pages para campanhas, parceiros e institucional para plataforma Vtex.">
+                                    </li>
+                                    <!-- End Item Project -->                                    
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 web">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="web" title="Extplore Developer" href="include/img/work/full/extplore_developer.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/extplore_developer_thumbs.jpg" alt="Extplore adaptado para qualquer aplicação web com plugin Edita_area e Genshi adaptado para várias linguágens de progração e um plugin proprietário auto-complete code.">
+                                    </li>
+                                    <!-- End Item Project -->                                     
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 eccomerce">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="eccomerce" title="Atualização Automática de Atributo" href="include/img/work/full/auto_attribute_products.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/auto_attribute_products_thumbs.jpg" alt="Modulo para atualização automática de atributos para anúncios em Marketplaces">
+                                    </li>
+                                    <!-- End Item Project -->   
+                                    <!-- Item Project and Filter Name -->
+                                    <li class="item-thumbs span3 desktop">
+                                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                        <a class="hover-wrap fancybox" data-fancybox-group="desktop" title="Relatório de Situação de Produtos - Marktplaces" href="include/img/work/full/vba_comparativo.jpg">
+                                            <span class="overlay-img"></span>
+                                            <span class="overlay-img-thumb font-icon-plus"></span>
+                                        </a>
+                                        <!-- Thumb Image and Description -->
+                                        <img src="include/img/work/thumbs/vba_comparativo_thumbs.jpg" alt="Aplicação desenvolvida em vba para analise de situação de produtos comparando a base de dados local com a base de dados da B2W, Extra.com, Walmart e Mercado Livre.">
+                                    </li>
+                                    <!-- End Item Project -->
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Portfolio Projects -->
+            </div>
+        </div>
+        <!-- End Our Work Section -->
+        <!-- About Section -->
+        <div id="about" class="page-alternate">
+            <div class="container">
+                <!-- Title Page -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="title-page">
+                            <h2 class="title">Especialidades</h2>
+                            <h3 class="title-description"></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Title Page -->
+                <!-- People -->
+                <div class="row">
+                    <!-- Start Profile -->
+                    <div class="span4 profile">
+                        <div class="image-wrap">
+                            <div class="hover-wrap">
+                                <span class="overlay-img"></span>
+                                <span class="overlay-text-thumb">Programador / Web Developer</span>
+                            </div>
+                            <img src="include/img/profile/foto.jpg" alt="Elde Xavier">
+                        </div>
+                        <h3 class="profile-name">Elder Xavier</h3>            
+                        <p class="profile-description">Desenvolvimento de softwares é coisa seria.
+                            Um codigo limpo e de qualidade é impressindivel para a elaboração de qualquer projeto, seja para Web, Desktop ou Mobille.
+                        </p>
+                        <p class="profile-description">
+                            Para isso é muito importante manter um padrão de arquitetura e controle de versão além do domínio das tecnologias utilizadas,
+                            o emprego de algoritimos apropriados para cada aplicação, lógica, raciocínio, agilidade e muito café. 
+                        </p>
+                        <p class="profile-description">
+                            Com o emprego das funções técnicas a serem renderizadas em um sistema computacional um programador deve sempre ter que quem irá usufruir 
+                            do seu trabalho são pessoas, e projetar sua aplicação para que sejam facilmente compreendidas pela máquina que está executando o programa 
+                            como pelo usuário da aplicação.
+                        </p>	
+                        <p class="profile-description">
+                            Para desenvolver um sistema com os padrões que usufluo adiquiri os seguintes conhecimentos: 
+                        </p>
+                        <div class="social">
+                            <ul class="social-icons">
+                                <li><a href="https://twitter.com/elder_xav5" target="_blank" title="Visite meu Twitter" ><i class="font-icon-social-twitter"></i></a></li>
+                                <!--<li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>-->
+                                <li><a href="https://plus.google.com/117185886321852285202" target="_blank" title="Visite meu G+"><i class="font-icon-social-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/elder.sergioxavier" target="_blank" title="Visite meu Facebook"><i class="font-icon-social-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/pub/elder-sergio-xavier/56/62a/3b6" target="_blank" title="Visite meu Linkedin"><i class="font-icon-social-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Profile -->
+                    <!-- Start Profile -->
+                    <div class="span4 profile">  			            
+                        <h3 class="profile-name">Linguagens de Programação</h3>
+                        <ul class="ul-profile-description">
+                            <li> Java SE;</li>
+                            <li>Java EE;</li>
+                            <li>Javascript;</li>
+                            <li>Visual Basic;</li>
+                            <li>C++;</li>				
+                            <li> C ; </li>
+                            <li> C#; </li>
+                            <li> Asp; </li>
+                            <li> Aspx; </li>
+                            <li> Ruby; </li>
+                            <li> Python; </li>
+                            <li> Pearl; </li>
+                            <li> Basic; </li>
+                            <li> Assembler; </li> 
+                            <li> Nodejs; </li> 
+                            <li> Delph; </li> 
+                            <li> Lisp; </li> 
+                            <li> Haskell; </li> 
+                            <li> .NET; </li> 
+                            <li> Fortran; </li> 
+                            <li> Cobol; </li> 
+                            <li> Pascal; </li> 
+                            <li> Prolog;  </li> 
+                            <li> QPL; </li> 
+                            <li> QHaskell;  </li> 
+                            <li> Q;  </li> 				
+                        </ul>
+                        <h3 class="profile-name">Servidores</h3>
+                        <ul class="ul-profile-description">
+                            <li>Apache;</li>
+                            <li>Tomcat;</li>
+                            <li>MS IIS;</li>
+                            <li>Debian Server;</li>
+                            <li>Ubuntu Server;</li>
+                            <li>Windows Server 2003;</li>
+                            <li>Windows Server 2008;</li>				
+                        </ul>	
+                        <h3 class="profile-name">Controle de versão</h3>
+                        <ul class="ul-profile-description">
+                            <li>Git</li>								
+                            <li>SNV</li>
+                        </ul>	
+                    </div>
+                    <!-- End Profile -->
+                    <!-- Start Profile -->
+                    <div class="span4 profile">        	
+                        <h3 class="profile-name">Banco de Dados</h3>            
+                        <ul class="ul-profile-description">
+                            <li>Base I e Base II; </li>
+                            <li>Mysql; </li>				
+                            <li>MS SQL Server;</li>
+                            <li>Blackbird;</li>
+                            <li>PL-SQL;</li>
+                            <li>Oracle Database;</li>
+                            <li>SQ-Lite;</li>
+                        </ul>	
+                        <h3 class="profile-name">Linguagens de Marcação</h3>
+                        <ul class="ul-profile-description">
+                            <li>HTML;</li>
+                            <li>XML;</li>
+                            <li>JSon;</li>
+                        </ul>
+                        <h3 class="profile-name">Linguagem de Estilo</h3>
+                        <ul class="ul-profile-description">
+                            <li>CSS;</li>								
+                        </ul>
+                        <h3 class="profile-name">Frameworks</h3>
+                        <ul class="ul-profile-description">
+                            <li>Jquery;</li>								
+                            <li>Bootstrap;</li>
+                            <li>Validate.js ;</li>
+                            <li>Zend e Zend 2;</li>
+                            <li>Marven;</li>
+                            <li>Angular e Angular 2;</li>
+                            <li>Backbone.js;</li>
+                            <li>Laravel;</li>
+                            <li>Net framework;</li>
+                            <li>Cordova;</li>
+                            <li>Ionic;</li>
+                        </ul>
+                        <h3 class="profile-name">CMS</h3>
+                        <ul class="ul-profile-description">
+                            <li>Magento</li>								
+                            <li>Drupal</li>
+                            <li>Wordpress</li>
+                            <li>Vtex</li>	
+                        </ul>                        
+                    </div>
+                    <!-- End Profile -->
+                </div>
+                <!-- End People -->
+            </div>
+        </div>
+        <!-- End About Section -->
+        <!-- Contact Section -->
+        <div id="contact" class="page">
+            <div class="container">
+                <!-- Title Page -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="title-page">
+                            <h2 class="title">Contato</h2>
+                            <h3 class="title-description">Deixe aqui sua mensagem. Em breve retornarei o contato</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Title Page -->
+                <!-- Contact Form -->
+                <div class="row">
+                    <div class="span9">
+                        <form id="contact-form" class="contact-form" action="#">
+                            <p class="contact-name">
+                                <input id="contact_name" class="imput-email" type="text" placeholder="Nome" value="" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'"/>
+                            </p>
+                            <p class="contact-email">
+                                <input id="contact_email" class="imput-email" type="text" placeholder="Email" value="" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" />
+                            </p>
+                            <p class="contact-message">
+                                <textarea id="contact_message" class="imput-email" placeholder="Mensagem" name="message" rows="15" cols="40" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensagem'"></textarea>
+                            </p>
+                            <p class="contact-submit">
+                                <a id="contact-submit" class="submit" href="javascript:void(0)">Enviar mensagem</a>
+                            </p>
+                            <!--<div id="response">                
+                            </div>-->
+                        </form>
+                    </div>
+                    <div class="span3">
+                        <div class="contact-details">
+                            <h3>Ou se preferir</h3>
+                            <ul>                    
+                                <li><a id="lin-tel" href="tel:1134214234">(11) 95230-2256</a></li>					
+                                <li><a href="skype:live:eldersxavier?call"> Skype - live:elderxavier  </a><li>
+                                    Elder Xavier
+                                    <br>
+                                    <br>
+                                    <br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Contact Form -->
+            </div>
+        </div>
+        <!-- End Contact Section -->
+        <!-- Github feed -->
+        <div id="github-feed" class="page-alternate">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="follow">
+                            <a href="https://github.com/elderxavier" title="Veja os meus repositorios no Github" target="_blank"><div id="img-github"></div></a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Github feed -->
+        <!-- Socialize -->
+        <div id="social-area" class="page">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <nav id="social">
+                            <ul>
+                                <li><a href="javascript:void(0)" title="Siga-me no Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
+                                <li><a href="javascript:void(0)" title="Siga-me no Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Socialize -->
+        <!-- Footer -->
+        <footer>
+            <p class="credits">&copy;2015 Elde Xavier <a href="https://github.com/elderxavier" title="Github Elde Xavier">Github</a></p>
+        </footer>
+        <!-- End Footer -->
+        <!-- Back To Top -->
+        <a id="back-to-top" href="#">
+            <i class="font-icon-arrow-simple-up"></i>
+        </a>
+        <!-- End Back to Top -->
+        <div id="mascara"></div>
+        <div id="msg-box">
+            <div id="msg-box-inner">
+            </div>
+            <span id="msg-box-p">
+                <a id="msg-box-a" class="submit" href="javascript:void(0)">OK</a>
+            </span>
+        </div>
+        <div id="image-progess"></div>
+        <!-- Js -->
+        <script src="include/js/jquery.min.js"></script> <!-- jQuery Core -->
+        <script src="include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+        <script src="include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+        <script src="include/js/waypoints.js"></script> <!-- WayPoints -->
+        <script src="include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+        <script src="include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+        <script src="include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+        <script src="include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+        <script src="include/js/jquery.tweet.js"></script> <!-- Tweet -->
+        <script src="include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+        <script src="include/js/main.js"></script> <!-- Default JS -->
+        <script src="include/js/ajaxmail-1.0.0.js"></script>
+        <!-- End Js -->
+</body>
+</html>

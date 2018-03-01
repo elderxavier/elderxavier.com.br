@@ -1,0 +1,29 @@
+$box-spacing: 20px;
+
+.box {
+  padding: $box-spacing;
+  margin-bottom: $box-spacing;
+  background: #ffffff;
+  border: 1px solid $color-grey-light;
+  border-bottom-width: 2px;
+  &--listgroup {
+    margin-top: -($box-spacing + 2px);
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &--small {
+    padding: ($box-spacing / 2);
+  }
+  & > p:last-child {
+    margin-bottom: 0;
+  }
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin: 0;
+  }
+}

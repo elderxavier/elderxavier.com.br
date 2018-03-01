@@ -1,0 +1,28 @@
+name: Atlas
+type: theme
+description: A default base theme using Drupal 8.0.0's core markup, CSS, and JavaScript.
+package: Core
+# version: VERSION
+# core: 8.x
+
+libraries:
+ - atlas/global-styling
+
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first
+
+# Information added by Drupal.org packaging script on 2015-10-07
+version: '8.0.0-rc1'
+core: '8.x'
+project: 'drupal'
+datestamp: 1444253576

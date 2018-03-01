@@ -1,0 +1,13 @@
+name: CKEditor Dialog plugin
+type: module
+description: This plugin adds a dialog feature to the editor.
+# core: 8.x
+package: CKEditor
+# version: VERSION
+dependencies:
+  - ckeditor
+# Information added by Drupal.org packaging script on 2017-05-11
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'ckeditor_dialog'
+datestamp: 1494527588

@@ -1,0 +1,23 @@
+//---------------------------------------------//
+// Outline v0.1
+// A lightweight front-end boilerplate by Matt Harris
+// Free to use under the MIT License
+// Docs - http://outlinecss.co.uk/get-started.html
+//---------------------------------------------//
+
+// Vendors and external stylesheets
+@import
+  "vendors/font-awesome";
+
+// Utilities - make sure you import variables first
+@import
+  "utils/variables",
+  "utils/functions",
+  "utils/mixins",
+  "utils/helpers";
+
+// Components
+@import
+  "components/buttons",
+  "components/lists",
+  "components/toolbar";

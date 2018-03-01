@@ -1,0 +1,12 @@
+.panel {
+  padding: 0;
+  .panel__title {
+    background: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 0;
+    border: 1px solid $color-grey-light;
+    border-bottom: 0;
+  }
+}

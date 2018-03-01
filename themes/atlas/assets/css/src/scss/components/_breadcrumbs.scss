@@ -1,0 +1,19 @@
+.breadcrumbs {
+  @extend .list--unstyled;
+  margin: 0;
+  &__crumb {
+    display: inline-block;
+    margin-right: 0;
+    &:before {
+      content: '›';
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+  &__crumb:first-child {
+    &:before {
+      content: '';
+      display: none;
+    }
+  }
+}

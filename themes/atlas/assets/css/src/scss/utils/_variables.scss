@@ -1,0 +1,53 @@
+//---------------------------------------------//
+// Variables - Outline
+// all variables...
+// Docs - http://outlinecss.co.uk/get-started.html#variables
+//---------------------------------------------//
+
+// html
+$html-font-base: 100%; // 16px
+$font-base: 0.875rem; // 14px
+$spacing: 1.5rem; // 24px
+
+// Fonts
+$font-primary: 'Roboto', 'Lato', serif; // body font
+$font-secondary: 'Roboto', 'Lato', sans-serif; // title font
+$font-monospace: Monaco, Consolas, 'Lucida Console', monospace;
+
+// Colours 37AFD9
+$color-primary: #2da6d1;
+$color-primary-lighten: lighten($color-primary, 5%);
+$color-primary-dark: darken($color-primary, 5%);
+
+$color-secondary: #FFD500;
+$color-tertiary: #79BA7B;
+
+$color-positive: #79BA7B;
+
+$color-grey-light: #e0e4e7;
+
+$color-grey: #a1acb5;
+
+$color-grey-dark-highlight: #444444;
+$color-grey-dark: #3b3e46;
+$color-grey-dark-darken: #383838;
+
+$body-bg: #f6f7f8;
+$color-text: #656870;
+
+// Placeholder text colour
+$placeholder-text: $color-grey;
+
+// Button text color
+$btn-text-color: #fff;
+$btn-text-color-alt: $color-grey-dark;
+
+// Breakpoints
+$mobile-landscape: 480px; // 480px
+$tablet: 610px; // 610px
+$tablet-wide: 768px; // 768px
+$desktop: 1024px; // 1024px
+$widescreen: 1140px; // 1140px
+
+
+

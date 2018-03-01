@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Seven theme implementation to display primary and secondary local tasks.
+ *
+ * Available variables:
+ * - primary: HTML list items representing primary tasks.
+ * - secondary: HTML list items representing primary tasks.
+ *
+ * Each item in these variables (primary and secondary) can be individually
+ * themed in menu-local-task.html.twig.
+ *
+ * @see template_preprocess_menu_local_tasks()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if primary %}
+  <ul class="tabs tabs__tabs clearfix" data-drupal-nav-tabs-target>{{ primary }}</ul>
+{% endif %}
+{% if secondary %}
+  <ul class="tabs tabs__pill clearfix">{{ secondary }}</ul>
+{% endif %}

@@ -1,0 +1,371 @@
+#toolbar-administration {
+  font-family: 'Roboto', 'Lato', serif;
+}
+.toolbar-oriented {
+  .toolbar-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $color-primary;
+  }
+}
+.toolbar {
+  z-index: 1250;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding:0;
+  margin: 0;
+  font-size: small;
+  line-height: 1;
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    list-style-image: none;
+  }
+  a {
+    display: block;
+    outline: none;
+    outline-style: none;
+    -moz-outline-style:none;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  button {
+    border: 0;
+    outline: none;
+    margin-bottom: 0;
+  }
+  .toolbar-bar {
+    .toolbar__name {
+      float: left;
+      display: block;
+      width: 240px;
+      padding: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: 700;
+      background-color: #222222;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    .toolbar-tab {
+      float: left;
+      &.hidden {
+        display: none;
+      }
+      & > .toolbar-icon {
+        position: relative;
+        z-index: 1251;
+        display: block;
+        padding: 20px 20px 20px 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #C5E0E9;
+        &:hover {
+          color: #ffffff;
+        }
+        &.trigger {
+          &:after {
+            content: "\f078";
+            display: inline-block;
+            width: 10px;
+            margin-left: 6px;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+          &.is-active {
+            background-color: $color-primary-dark;
+            &:hover {
+              color: #C5E0E9;
+              &:after {
+                color: #ffffff;
+              }
+            }
+            &:after {
+              content: '\f00d';
+            }
+          }
+        }
+        @media (max-width: $desktop) {
+          padding: 20px 10px 20px 15px;
+        }
+        @media (max-width: $tablet) {
+          padding: 15px 5px 15px 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .toolbar-tray {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    z-index: 1250;
+    background-color: $color-grey-dark;
+    font-weight: bold;
+    &.is-active {
+      display: block;
+      .toolbar-lining {
+        & > .toolbar-menu,
+        & > div > .toolbar-menu {
+          display: block;
+        }
+      }
+    }
+    .toolbar-menu {
+      &.root {
+        display: block;
+      }
+      display: none;
+      margin: 0;
+      a {
+        padding: 20px;
+        color: $color-grey;
+        &:hover {
+          color: #ffffff;
+        }
+        &.menu-item--active {
+          color: #ffffff;
+        }
+        &.toolbar-icon:before {
+          display: inline-block;
+          width: 14px;
+          margin-right: 16px;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        &.toolbar-icon-system-admin-content:before {
+          content: '\f0f6';
+        }
+        &.toolbar-icon-system-admin-structure:before {
+          content: '\f1b2';
+        }
+        &.toolbar-icon-system-themes-page:before {
+          content: '\f03e';
+        }
+        &.toolbar-icon-system-modules-list:before {
+          content: '\f12e';
+        }
+        &.toolbar-icon-system-admin-config:before {
+          content: '\f085';
+        }
+        &.toolbar-icon-entity-user-collection:before {
+          content: '\f007';
+        }
+        &.toolbar-icon-system-admin-reports:before {
+          content: '\f080';
+        }
+        &.toolbar-icon-help-main:before {
+          content: '\f05a';
+        }
+
+      }
+      .toolbar-handle {
+        padding: 20px;
+      }
+
+      &.root {
+        .toolbar-menu {
+          padding: 0 10px 10px 40px;
+          .toolbar-menu {
+            padding: 0 10px 10px 20px;
+          }
+          a {
+            padding: 10px;
+          }
+          .toolbar-box {
+            position: relative;
+            & > .toolbar-handle {
+              padding: 10px;
+            }
+          }
+        }
+      }
+      .toolbar-box {
+        position: relative;
+        & > .toolbar-handle {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 0;
+          color: $color-grey;
+          background-color: transparent;
+          &:hover {
+            color: white;
+            //background-color: $color-grey-dark-darken;
+          }
+          &:after {
+            content: "\f078";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+          span {
+            display: none;
+          }
+          &.open {
+            &:after {
+              content: '\f077';
+            }
+          }
+        }
+      }
+    }
+    .toolbar-toggle-orientation {
+      button {
+        margin: 0;
+        background: none;
+        width: 100%;
+        color: $color-grey;
+        background-color: $color-grey-dark;
+        font-weight: 500;
+        &:after,
+        &:before {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    }
+    .edit-shortcuts {
+      display: none;
+    }
+  }
+  .toolbar-tab.contextual-toolbar-tab {
+    float: right;
+    .toolbar-icon-edit {
+      background: transparent;
+    }
+  }
+}
+.toolbar-oriented {
+  .toolbar-tray-vertical {
+    width: 240px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    bottom: 0;
+    .toolbar-menu {
+      .menu-item {
+        &.open {
+          position: relative;
+          background-color: $color-grey-dark-darken;
+          &:before {
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            width: 5px;
+            content: '';
+            background-color: $color-primary;
+          }
+          li {
+            &:before {
+              display: none;
+            }
+          }
+          & > .toolbar-menu {
+            display: block;
+          }
+        }
+      }
+    }
+    > .toolbar-lining {
+      min-height: 100%;
+      &:before {
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0; /* LTR */
+        position: fixed;
+        top: 0;
+        width: 240px;
+        z-index: -1;
+      }
+      & > div > .toolbar-menu {
+        margin-bottom: 30px;
+      }
+    }
+    .toolbar-toggle-orientation {
+      position: fixed;
+      bottom: 0;
+      width: 240px;
+      button {
+        &:after {
+          content: "\f0d8";
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+  .toolbar-tray-horizontal {
+    position: fixed;
+    .toolbar-menu {
+      .menu-item.open > .toolbar-menu {
+        display: none;
+      }
+      li {
+        float: left;
+        li {
+          float: none;
+        }
+      }
+      a.toolbar-icon:before {
+        margin-right: 6px;
+      }
+    }
+    .menu-item {
+      ul {
+        display: none;
+      }
+    }
+    .toolbar-box {
+      .toolbar-handle {
+        display: none;
+      }
+    }
+    .toolbar-toggle-orientation {
+      float: right;
+      button {
+        padding: 20px 10px;
+        &:before {
+          content: "\f0d9";
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+.toolbar-horizontal {
+  .toolbar {
+    bottom: auto;
+  }
+}
+
+
+.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
+  margin-left: 240px;
+}

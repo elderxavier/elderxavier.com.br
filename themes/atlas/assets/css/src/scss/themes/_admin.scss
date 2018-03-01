@@ -1,0 +1,69 @@
+/**
+ * Content
+ */
+#block-atlas-content .views-exposed-form,
+#block-atlas-local-actions,
+#edit-node-bulk-form--2,
+.comment-admin-overview #edit-options
+{
+  @extend .box;
+}
+
+
+/**
+ * Structure
+ */
+#block-atlas-help,
+#block-atlas-content .package-listing,
+{
+  @extend .box;
+}
+
+
+/**
+ * Appearance
+ */
+#system-themes-page .system-themes-list,
+#system-themes-admin-form,
+#block-atlas-content .table-filter
+{
+  @extend .box;
+}
+
+#block-atlas-content .form-item-mail-notification-address,
+#field-display-overview-wrapper,
+#block-atlas-content #edit-formats
+{
+  @extend .box;
+}
+
+#system-file-system-settings #edit-file-public-path,
+#system-file-system-settings #edit-file-public-base-url,
+#system-file-system-settings #edit-file-private-path,
+#system-file-system-settings .form-item-file-temporary-path,
+#system-file-system-settings .form-item-temporary-maximum-age
+{
+  @extend .box;
+}
+
+.node-form {
+  @extend .box;
+}
+
+
+$susy: (
+  columns: 12,
+  container: 100%,
+  gutter: 1/4,
+  global-box-sizing: border-box,
+);
+
+.views-exposed-form {
+  @extend %clearfix;
+  .form__row {
+    @include span(3);
+    &:nth-child(n+4) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{#
+/**
+* @file
+* Default theme implementation for a breadcrumb trail.
+*
+* Available variables:
+* - breadcrumb: Breadcrumb trail items.
+*
+* @ingroup themeable
+*/
+#}
+{% if breadcrumb %}
+    <ol class="breadcrumbs">
+        {% for item in breadcrumb %}
+            {% if item.url %}
+            <li class="breadcrumbs__crumb">
+                <a href="{{ item.url }}">{{ item.text }}</a>
+            </li>
+            {% else %}
+            <li class="breadcrumbs__crumb breadcrumbs__crumb--active">
+                {{ item.text }}
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+{% endif %}

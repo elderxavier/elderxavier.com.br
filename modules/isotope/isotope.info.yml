@@ -1,0 +1,14 @@
+name: Isotope
+type: module
+description: 'Create reusable Isotope presentations.'
+package: User interface
+# core: 8.x
+configure: entity.presentation.list
+library_dependencies:
+  - isotope
+
+# Information added by Drupal.org packaging script on 2016-10-28
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'isotope'
+datestamp: 1477676695
