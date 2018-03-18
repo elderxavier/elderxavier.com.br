@@ -2,10 +2,6 @@
 # Apache/PHP/Drupal settings:
 #
 
-
-php_value upload_max_filesize 128M
-php_value post_max_size 128M
-
 # Protect files and directories from prying eyes.
 <FilesMatch "\.(engine|inc|install|make|module|profile|po|sh|.*sql|theme|twig|tpl(\.php)?|xtmpl|yml)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\.(?!well-known).*|Entries.*|Repository|Root|Tag|Template|composer\.(json|lock))$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig|\.save)$">
   <IfModule mod_authz_core.c>
